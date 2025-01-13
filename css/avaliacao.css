@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ceceb9; /* Fundo bege */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7a9164;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #7db300;
+}
+
+.evaluation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.evaluation-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.customer-name {
+    font-weight: bold;
+}
+
+.service-type {
+    font-style: italic;
+    color: #666;
+}
+
+.date {
+    display: block;
+    margin-top: 5px;
+    color: #888;
+}
+
+.stars {
+    margin-top: 10px;
+}
+
+.star {
+    color: gold;
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.star.empty {
+    color: #ccc;
+}

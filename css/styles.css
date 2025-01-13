@@ -1,0 +1,280 @@
+body, html {
+  margin: 0; /* Remove as margens padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  height: 100%; /* Define a altura para ocupar toda a viewport */
+  font-family: Arial, sans-serif; /* Define a família da fonte */
+  background-color: #E4E2DD; /* Define a cor de fundo */
+}
+
+.transition-screen {
+  display: flex; /* Define como flex container */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define a altura para ocupar toda a viewport */
+  background-color: #E4E2DD; /* Define a cor de fundo */
+}
+
+.Logo_transicao {
+  max-width: 18.75em; /* Define a largura máxima */
+}
+
+.hidden {
+  display: none; /* Esconde o elemento */
+}
+
+header {
+  background-color: #E4E2DD; /* Define a cor de fundo do cabeçalho */
+  color: #333; /* Define a cor do texto */
+  padding: 0.625em 1.25em; /* Define o preenchimento */
+  position: fixed; /* Define a posição fixa */
+  width: 100%; /* Define a largura para ocupar toda a largura disponível */
+  top: 0; /* Alinha ao topo */
+  display: flex; /* Define como flex container */
+  align-items: center; /* Centraliza verticalmente */
+  box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  z-index: 1000; /* Define a ordem de empilhamento */
+}
+
+.logo-container {
+  display: flex; /* Define como flex container */
+  align-items: center; /* Centraliza verticalmente */
+  flex: 1; /* Define a proporção flexível */
+}
+
+.logo {
+  max-width: 9.375em; /* Define a largura máxima */
+  margin-right: 0.063em; /* Define a margem direita */
+}
+
+.center-container {
+  display: flex; /* Define como flex container */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  flex: 2; /* Define a proporção flexível */
+}
+
+.search {
+  display: flex; /* Define como flex container */
+  width: 100%; /* Define a largura para ocupar toda a largura disponível */
+  max-width: 37.5em; /* Define a largura máxima */
+  gap: 0.625em; /* Define o espaçamento entre os itens */
+  margin-top: 0.625em; /* Define a margem superior */
+}
+
+.search input[type="search"] {
+  flex: 1; /* Define a flexibilidade */
+  padding: 0.625em; /* Define o preenchimento */
+  border: 0.063em solid #ccc; /* Define a borda */
+  border-radius: 0.313em; /* Define o raio da borda */
+}
+
+.search button {
+  padding: 0.625em 1.25em; /* Define o preenchimento */
+  background-color: #39a147; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 0.313em; /* Define o raio da borda */
+  cursor: pointer; /* Define o cursor */
+}
+
+.search button:hover {
+  background-color: #285f8f; /* Define a cor de fundo ao passar o mouse */
+}
+
+.container {
+  margin-top: 10em; /* Define a margem superior */
+  padding: 1.25em; /* Define o preenchimento */
+}
+
+.content {
+  display: flex; /* Define como flex container */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  gap: 1.25em; /* Define o espaçamento entre os itens */
+  margin-bottom: 1.25em; /* Define a margem inferior */
+}
+
+.container-text {
+  width: 50%; /* Define a largura */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.highlight-text {
+  font-family: 'Arial Black', Arial, sans-serif; /* Define a família da fonte */
+  color: #7a9164; /* Define a cor do texto */
+  font-size: 3.125em; /* Define o tamanho da fonte */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.imagem {
+  max-width: 18.75em; /* Define a largura máxima */
+}
+
+.texto {
+  max-width: calc(100% - 20em); /* Define a largura máxima */
+}
+
+/* Carrossel styles */
+.carrossel-container {
+  margin-bottom: 1.25em; 
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.comment {
+  flex: 0 0 auto;
+  min-width: 18.75em; 
+  height: 25em; 
+  margin-right: 0.625em; 
+  scroll-snap-align: start;
+}
+
+/* Login styles */
+.login-container {
+  display: flex; /* Define como flex container */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define a altura para ocupar toda a viewport */
+  background-color: #f0f0f0; /* Define a cor de fundo */
+}
+
+.login-box {
+  width: 18.75em; /* Define a largura */
+  padding: 1.25em; /* Define o preenchimento */
+  border: 0.063em solid #ccc; /* Define a borda */
+  border-radius: 0.625em; /* Define o raio da borda */
+  box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+label {
+  display: block; /* Exibe como bloco */
+  margin-bottom: 0.625em; /* Define a margem inferior */
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%; /* Define a largura para ocupar toda a largura disponível */
+  padding: 0.625em; /* Define o preenchimento */
+  margin-bottom: 1.25em; /* Define a margem inferior */
+  border: 0.063em solid #ccc; /* Define a borda */
+}
+
+.forgot-password {
+  font-size: 0.875em; /* Define o tamanho da fonte */
+  color: #337ab7; /* Define a cor do texto */
+  text-decoration: none; /* Remove decoração do texto */
+}
+
+.login-btn {
+  width: 100%; /* Define a largura para ocupar toda a largura disponível */
+  padding: 0.625em; /* Define o preenchimento */
+  background-color: #337ab7; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 0.625em; /* Define o raio da borda */
+  cursor: pointer; /* Define o cursor */
+}
+
+.no-account {
+  font-size: 0.875em; /* Define o tamanho da fonte */
+  color: #666; /* Define a cor do texto */
+  margin-top: 1.25em; /* Define a margem superior */
+}
+
+/* Services list styles */
+.services {
+  list-style: none; /* Remove a estilização da lista */
+  padding: 0; /* Remove o preenchimento */
+  margin: 0; /* Remove as margens */
+}
+
+.services li {
+  margin-bottom: 0.625em; /* Define a margem inferior */
+}
+
+.services li a {
+  text-decoration: none; /* Remove decoração do link */
+  color: #337ab7; /* Define a cor do texto */
+}
+
+.services li a:hover {
+  color: #23527c; /* Define a cor do texto ao passar o mouse */
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed; /* Define a posição fixa */
+  bottom: 0; /* Alinha ao rodapé */
+  width: 100%; /* Define a largura para ocupar toda a largura disponível */
+  background-color: #f5f5f5; /* Define a cor de fundo */
+  display: flex; /* Define como flex container */
+  justify-content: space-around; /* Distribui os itens uniformemente */
+  border-top: 0.063em solid #ccc; /* Define a borda superior */
+  box-shadow: 0 -0.0625em 0.3125em rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.nav-link {
+  display: flex; /* Define como flex container */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  padding: 0.625em; /* Define o preenchimento */
+  text-decoration: none; /* Remove decoração do texto */
+  color: #333; /* Define a cor do texto */
+  font-size: 0.875em; /* Define o tamanho da fonte */
+}
+
+.nav-link i {
+  font-size: 1.5em; /* Define o tamanho do ícone */
+}
+
+.services li {
+  margin-bottom: 0.625em; 
+  text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.services li a {
+  display: inline-block;
+  padding: 0.625em 1.25em; 
+  background-color: #f2f2f7; /* Cor de fundo */
+  color: #000000; /* Cor da fonte */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Tipo de fonte */
+  font-size: 1.25em; 
+  text-decoration: none;
+  border-radius: 0.3125em; 
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.services li a:hover {
+  background-color: #d9d9e1; /* Cor de fundo ao passar o mouse */
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services li {
+  margin-bottom: 0.625em; 
+  text-align: center; /* Centraliza o texto dentro do botão */
+  display: inline-block; /* Exibe os botões horizontalmente */
+}
+
+.services li a {
+  display: inline-block;
+  padding: 0.625em 1.25em; 
+  background-color: #f2f2f7; /* Cor de fundo */
+  color: #000000; /* Cor da fonte */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Tipo de fonte */
+  font-size: 1.25em; 
+  text-decoration: none;
+  border-radius: 0.3125em; 
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+  margin-right: 0.625em; 
+}
+
+.services li a:hover {
+  background-color: #d9d9e1; /* Cor de fundo ao passar o mouse */
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif; /* Define a fonte para todo o documento */
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove o preenchimento */
+    box-sizing: border-box; /* Define a caixa de modelo de borda */
+}
+
+html, body {
+    height: 100%; /* Garante que ocupem todo o viewport */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    overflow: hidden; /* Impede que a tela role */
+}
+
+#login-container {
+    height: 100vh; /* Garante altura total do viewport */
+    width: 100vw; /* Garante largura total do viewport */
+    display: flex; /* Define como flex container */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Alinha os itens horizontalmente */
+    margin: 0; /* Remove margens extras */
+    padding: 0; /* Remove preenchimentos extras */
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro translúcido */
+    position: fixed; /* Garante que ele cubra a tela completamente */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+}
+
+#login_form {
+    display: flex; /* Define como flex container */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    background-color: #f8fafc; /* Define a cor de fundo */
+    padding: 2em; /* Define o preenchimento */
+    border-radius: 0.5em; /* Define o raio da borda */
+    gap: 1.5em; /* Define o espaçamento entre os elementos */
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.3); /* Define a sombra */
+    max-width: 500px; /* Define largura máxima */
+    width: 90%; /* Garante que ele seja responsivo */
+}
+
+#form_header h1 {
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    position: relative; /* Define a posição relativa */
+}
+
+#form_header h1::before {
+    position: absolute; /* Define a posição absoluta */
+    content: ''; /* Adiciona conteúdo */
+    width: 14%; /* Define a largura */
+    background-color: #3e7445; /* Define a cor de fundo */
+    height: 0.113em; /* Define a altura */
+    bottom: 0.125em; /* Define a posição inferior */
+    border-radius: 0.625em; /* Define o raio da borda */
+}
+
+#social_media {
+    display: flex; /* Define como flex container */
+    justify-content: space-around; /* Define o espaçamento em torno */
+}
+
+#social_media img {
+    width: 3.125em; /* Define a largura da imagem */
+}
+
+#social_media img:hover {
+    transform: scale(1.2); /* Define a escala ao passar o mouse */
+}
+
+#inputs {
+    display: flex; /* Define como flex container */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Alinha os itens horizontalmente */
+    gap: 1.25em; /* Define o espaçamento entre os elementos */
+}
+
+.input-box label {
+    font-size: 0.875em; /* Define o tamanho da fonte para a label */
+    color: #0d0e0d; /* Define a cor do texto */
+}
+
+.input-field {
+    display: flex; /* Define como flex container */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 0.938em; /* Define o espaçamento entre os elementos */
+    padding: 0.188em; /* Define o preenchimento */
+    cursor: text; /* Define o cursor */
+    border-bottom: 0.188em solid #3e7445; /* Define a borda inferior */
+}
+
+.input-field i {
+    font-size: 0.625em; /* Define o tamanho da fonte para o ícone */
+    color: #0d0e0d; /* Define a cor do texto */
+}
+
+.input-field input {
+    border: none; /* Remove a borda */
+    background-color: transparent; /* Define o fundo transparente */
+    width: 16.25em; /* Define a largura */
+    font-size: 1.125em; /* Define o tamanho da fonte */
+    padding: 0em 0.313em; /* Define o preenchimento */
+}
+
+.input-field input:focus {
+    outline: none; /* Remove o contorno ao focar */
+}
+
+#forgot-password a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 0.75em; /* Define o tamanho da fonte */
+    color: #0d0e0d; /* Define a cor do texto */
+}
+
+#forgot-password a:hover {
+    color: #68834d; /* Define a cor do texto ao passar o mouse */
+}
+
+#login-button {
+    border: none; /* Remove a borda */
+    background: #68834d; /* Define a cor de fundo */
+    color: #f8fafc; /* Define a cor do texto */
+    padding: 0.438em; /* Define o preenchimento */
+    font-size: 0.625em; /* Define o tamanho da fonte */
+    border-radius: 0.188em; /* Define o raio da borda */
+    font-weight: bold; /* Define o peso da fonte */
+    cursor: pointer; /* Define o cursor */
+}
+
+#login-button:hover {
+    transform: scale(1.05); /* Define a escala ao passar o mouse */
+}
+
+#login-button a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 0.93rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+.errors {
+    color: red;
+    font-weight: bold;
+}
+.errors ul {
+    list-style-type: none;
+}
+.errors li {
+    margin-bottom: 10px;
+}

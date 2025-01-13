@@ -1,0 +1,84 @@
+#testimonials {
+    min-height: calc(100vh - 5.688em); /* Define a altura mínima calculada para a seção de depoimentos */
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 3em; /* Adiciona um espaçamento entre os itens */
+}
+
+#testimonials_icones {
+    width: 31.25em; /* Define a largura dos ícones de depoimentos */
+    height: auto; /* Ajusta automaticamente a altura dos ícones */
+}
+
+#testimonials .section-subtitle {
+    font-size: 3rem; /* Define o tamanho da fonte do subtítulo da seção de depoimentos */
+}
+
+#testimonials_content {
+    width: 50%; /* Define a largura do conteúdo dos depoimentos */
+}
+
+#feedbacks {
+    display: flex; /* Usa display flex para o layout */
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 1.25em; /* Adiciona um espaçamento entre os itens */
+    margin-bottom: 2.5em; /* Adiciona margem inferior */
+    margin-top: 1.875em; /* Adiciona margem superior */
+}
+
+.feedback {
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    gap: 1.25em; /* Adiciona um espaçamento entre os itens */
+    background-color: #fff; /* Define a cor de fundo do feedback */
+    padding: 0.75em; /* Adiciona padding ao feedback */
+    border-radius: 0.75em; /* Adiciona bordas arredondadas */
+    box-shadow: 0em 0em 0.75em 0.25em rgba(34, 131, 7, 0.73); /* Adiciona sombra ao feedback */
+}
+
+.feedback-avatar {
+    width: 6.25em; /* Define a largura do avatar do feedback */
+    height: 6.25em; /* Define a altura do avatar do feedback */
+    border-radius: 100%; /* Define o formato do avatar como circular */
+    object-fit: cover; /* Ajusta o conteúdo do avatar para cobrir o elemento */
+}
+
+.feedback-content p {
+    display: flex; /* Usa display flex para o layout */
+    justify-content: space-between; /* Justifica o conteúdo com espaço entre os itens */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+.feedback-content p span {
+    color: #E6C313; /* Define a cor dos spans dentro do parágrafo do conteúdo do feedback */
+}
+
+@media screen and (max-width: 73.125em) {
+    #testimonials {
+        flex-direction: column; /* Organiza os itens em coluna em telas menores */
+    }
+    #testimonials .section-subtitle {
+        text-align: center; /* Centraliza o texto do subtítulo */
+        font-size: 2.5rem; /* Define o tamanho da fonte do subtítulo em telas menores */
+    }
+    #testimonials_content {
+        width: 70%; /* Define a largura do conteúdo dos depoimentos em telas menores */
+        display: flex; /* Usa display flex para o layout */
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    #testimonials .section-subtitle {
+        font-size: 2rem; /* Define o tamanho da fonte do subtítulo em telas ainda menores */
+    }
+    #testimonials_content {
+        width: 100%; /* Define a largura do conteúdo dos depoimentos em telas ainda menores */
+    }
+
+    .feedback {
+        flex-direction: column; /* Organiza os itens em coluna em telas ainda menores */
+    }
+}

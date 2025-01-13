@@ -1,0 +1,79 @@
+header {
+    width: 100%; /* Define a largura total do header */
+    padding: 1.75em 8%; /* Adiciona padding ao redor do header */
+    position: sticky; /* Mantém o header fixo no topo ao rolar a página */
+    top: 0; /* Define a posição do header no topo */
+    background-color: #b9c1b2; /* Define a cor de fundo do header */
+    z-index: 3; /* Define a camada de sobreposição do header */
+}
+
+#navbar {
+    width: 100%; /* Define a largura total da barra de navegação */
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+}
+
+#nav_logo {
+    font-size: 1.5em; /* Define o tamanho da fonte do logo */
+    color: #488745; /* Define a cor do logo */
+}
+
+#nav_list {
+    display: flex; /* Usa display flex para o layout da lista de navegação */
+    list-style: none; /* Remove o estilo de lista padrão */
+    gap: 3em; /* Adiciona espaçamento entre os itens da lista */
+}
+
+.nav-item a {
+    text-decoration: none; /* Remove a sublinhado dos links */
+    color: #1d1d1d; /* Define a cor dos links */
+    font-weight: 600; /* Define a espessura da fonte dos links */
+}
+
+.nav-item.active a {
+    color: #1d1d1d; /* Define a cor dos links ativos */
+    border-bottom: 0.188em solid #126d1f; /* Adiciona uma borda inferior aos links ativos */
+}
+
+#mobile_btn {
+    display: none; /* Oculta o botão móvel por padrão */
+}
+
+#mobile_menu {
+    display: none; /* Oculta o menu móvel por padrão */
+}
+
+@media screen and (max-width: 73.125em) { /* Estilos para telas menores que 73.125em (1170px) */
+    #nav_list,
+    #navbar .btn-default {
+        display: none; /* Oculta a lista de navegação e o botão padrão */
+    }
+
+    #mobile_btn {
+        display: block; /* Exibe o botão móvel */
+        border: none; /* Remove a borda do botão móvel */
+        background-color: transparent; /* Define a cor de fundo transparente */
+        font-size: 1.5rem; /* Define o tamanho da fonte do botão móvel */
+        cursor: pointer; /* Muda o cursor para pointer ao passar sobre o botão */
+    }
+
+    #mobile_menu.active {
+        display: flex; /* Exibe o menu móvel quando ativo */
+        flex-direction: column; /* Alinha os itens em coluna */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    #mobile_nav_list {
+        display: flex; /* Exibe a lista de navegação móvel */
+        flex-direction: column; /* Alinha os itens em coluna */
+        gap: 0.75em; /* Adiciona espaçamento entre os itens */
+        margin: 0.75em 0em; /* Adiciona margem vertical */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none; /* Remove o estilo de lista padrão */
+        text-align: center; /* Centraliza o texto dos itens */
+    }
+}

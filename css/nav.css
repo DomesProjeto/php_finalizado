@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 80px; /* Altura do header */
+    padding-bottom: 60px; /* Altura do footer */
+}
+
+
+/* Estilos para a barra de navegação (Navbar) */
+#navbar {
+    position: fixed; /* Fixa o navbar no topo */
+    top: 0; /* Posiciona o navbar no topo da página */
+    z-index: 100; /* Garante que fique acima de outros elementos */
+    background-color: #5f9466c7; /* Define a cor de fundo da barra de navegação */
+    padding: 0px; /* Adiciona espaçamento interno de 10px */
+    width: 100%; /* Define a largura total da barra de navegação */
+    display: flex; /* Usa display flex para o layout da barra */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+}
+
+/* Estilos para o logo dentro da barra de navegação */
+#nav_logo {
+    width: 150px; /* Define a largura do logo */
+    height: auto; /* Mantém a proporção da altura do logo */
+    font-size: 2em; /* Define o tamanho da fonte do logo, caso o logo seja texto */
+    color: #488745; /* Define a cor do texto do logo */
+}
+
+/* Estilos para a lista de navegação */
+#nav_list {
+    list-style: none; /* Remove o marcador de lista padrão */
+    display: flex; /* Usa flexbox para a lista de itens */
+    justify-content: space-around; /* Distribui os itens com espaçamento igual entre eles */
+}
+
+/* Estilos para os itens da lista de navegação */
+#nav_list .nav-item {
+    padding: 10px; /* Adiciona padding aos itens de navegação */
+}
+
+/* Estilos para os links dentro dos itens de navegação */
+#nav_list .nav-item a {
+    color: white; /* Define a cor dos links para branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilos para os links ativos (quando o item da navegação está selecionado) */
+#nav_list .nav-item.active a {
+    font-weight: bold; /* Deixa o texto do link em negrito */
+    color: rgb(35, 54, 31); /* Altera a cor do link ativo */
+}
+
+/* Estilos para os botões */
+.btn-default {
+    background-color: #3f5540; /* Cor de fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Define o padding interno do botão */
+    margin: 5px; /* Adiciona margem de 5px ao redor do botão */
+    cursor: pointer; /* Define o cursor como pointer (mão) quando o botão for clicado */
+}
+
+/* Estilos para os links dentro dos botões */
+.btn-default a {
+    color: white; /* Cor do texto do link dentro do botão */
+    text-decoration: none; /* Remove o sublinhado do link dentro do botão */
+}
+
+/* Estilos para o botão móvel (menu de navegação em dispositivos móveis) */
+#mobile_btn {
+    display: none; /* O botão é escondido por padrão, e será mostrado em telas menores */
+}
+
+/* Estilos para o rodapé (footer) */
+footer#footer {
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    bottom: 0; /* Posiciona o rodapé no fundo da tela */
+    left: 0; /* Alinha o rodapé à esquerda */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+    z-index: 10; /* Garante que o rodapé fique acima do conteúdo */
+    text-align: center; /* Alinha o conteúdo do rodapé ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    padding: 20px; /* Adiciona padding ao redor do rodapé */
+    background-color: #5f9466c7; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto no rodapé para branco */
+}
+
+footer {
+    padding: 20px;           /* Exemplo: espaçamento interno */
+    font-size: 0.9rem;       /* Tamanho do texto */
+  }
+  
+
+  

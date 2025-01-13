@@ -1,0 +1,79 @@
+#home {
+    display: flex; /* Usa display flex para o layout */
+    min-height: calc(100vh - 5.688em); /* Define a altura mínima considerando a altura da viewport menos um valor fixo */
+    position: relative; /* Define a posição relativa para o elemento */
+}
+
+#cta {
+    width: 35%; /* Define a largura do elemento */
+    display: flex; /* Usa display flex para o layout */
+    flex-direction: column; /* Alinha os itens em coluna */
+    gap: 1.75em; /* Adiciona espaçamento entre os itens */
+    margin-top: 5%; /* Adiciona margem superior */
+}
+
+#cta .title {
+    font-size: 3rem; /* Define o tamanho da fonte do título */
+    color: #7a9164; /* Define a cor do título */
+}
+
+#cta .title span {
+    color: #435730; /* Define a cor do texto dentro do span */
+}
+
+#cta .description {
+    font-size: 1.2rem; /* Define o tamanho da fonte da descrição */
+}
+
+#cta_buttons {
+    display: flex; /* Usa display flex para o layout dos botões */
+    gap: 1.5em; /* Adiciona espaçamento entre os botões */
+}
+
+#cta_buttons a {
+    text-decoration: none; /* Remove a sublinhado dos links */
+    color: #ffffff; /* Define a cor dos links */
+}
+
+#banner {
+    display: flex; /* Usa display flex para o layout do banner */
+    align-items: start; /* Alinha os itens ao início verticalmente */
+    justify-content: end; /* Alinha os itens ao final horizontalmente */
+    width: 80%; /* Define a largura do banner */
+}
+
+#banner img {
+    height: 85%; /* Define a altura da imagem */
+    width: fit-content; /* Ajusta a largura da imagem conforme o conteúdo */
+    z-index: 2; /* Define a camada de sobreposição da imagem */
+}
+
+.shape {
+    background-color: #d0d5cb; /* Define a cor de fundo da forma */
+    width: 50%; /* Define a largura da forma */
+    height: 90%; /* Define a altura da forma */
+    position: absolute; /* Define a posição absoluta para o elemento */
+    border-radius: 40% 30% 0% 20%; /* Adiciona bordas arredondadas à forma */
+    top: 55; /* Define a posição superior da forma */
+    right: 0; /* Define a posição direita da forma */
+    z-index: 1; /* Define a camada de sobreposição da forma */
+}
+
+@media screen and (max-width: 73.125em) { /* Estilos para telas menores que 73.125em (1170px) */
+    #home {
+        min-height: 100%; /* Define a altura mínima como 100% */
+        padding-top: 0em; /* Remove o padding superior */
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none; /* Oculta o banner, a imagem do banner e a forma */
+    }
+
+    #cta {
+        width: 100%; /* Define a largura do elemento */
+        text-align: center; /* Centraliza o texto */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+}

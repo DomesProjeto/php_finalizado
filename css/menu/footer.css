@@ -1,0 +1,22 @@
+footer {
+    background-color: #5f9466c7; /* Define a cor de fundo do rodapé */
+}
+
+#footer_items {
+    display: flex; /* Usa display flex para o layout dos itens do rodapé */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    padding: 0em 8% 1.5em 8%; /* Adiciona padding ao redor dos itens do rodapé */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+#copyright {
+    color: white; /* Define a cor do texto */
+    font-size: large; /* Define o tamanho da fonte */
+}
+
+@media screen and (max-width: 37.5em) { /* Estilos para telas menores que 37.5em (600px) */
+    #footer_items {
+        flex-direction: column; /* Altera a direção dos itens para coluna */
+        gap: 1.25em; /* Adiciona espaçamento entre os itens */
+    }
+}

@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap);
+
+body {
+    background: #d9d6cd; /* Define a cor de fundo para o corpo */
+    margin-top: 6.25em; /* Define a margem superior */
+}
+
+h4 {
+    font-size: 300%; /* Define o tamanho da fonte para h4 */
+    color: #0c5f0c; /* Define a cor do texto para h4 */
+}
+
+.ui-w-80 {
+    width: 5em !important; /* Define a largura com importância */
+    height: auto; /* Define a altura automática */
+}
+
+.btn-default {
+    border-color: rgb(211, 197, 197); /* Define a cor da borda */
+    background: rgb(211, 197, 197); /* Define a cor de fundo */
+    color: #4E5155; /* Define a cor do texto */
+}
+
+.btn-default a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 0.93rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+
+label.btn {
+    margin-bottom: 0; /* Remove a margem inferior */
+}
+
+.btn-outline-primary {
+    border-color: #0c5f0c; /* Define a cor da borda */
+    background: transparent; /* Define o fundo transparente */
+    color: #0c5f0c; /* Define a cor do texto */
+}
+
+.btn-outline-primary:hover {
+    background-color: rgb(50, 95, 54); /* Define a cor de fundo ao passar o mouse */
+    border-color: #0c5f0c; /* Define a cor da borda ao passar o mouse */
+    /* Outros estilos... */
+}
+
+.btn {
+    cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+.text-light {
+    color: #babbbc !important; /* Define a cor do texto com importância */
+}
+
+.btn-twitter {
+    border-color: rgb(211, 197, 197); /* Define a cor da borda */
+    background: #0c5f0c; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+}
+
+.btn-facebook {
+    border-color: rgb(211, 197, 197); /* Define a cor da borda */
+    background: #0c5f0c; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+}
+
+.btn-instagram {
+    border-color: rgb(211, 197, 197); /* Define a cor da borda */
+    background: #0c5f0c; /* Define a cor de fundo */
+    color: #ffff; /* Define a cor do texto */
+}
+
+.btn-primary {
+    border-color: rgb(211, 197, 197); /* Define a cor da borda */
+    background: #0c5f0c; /* Define a cor de fundo */
+    color: #ffff; /* Define a cor do texto */
+}
+
+.btn-primary:hover {
+    background-color: rgb(50, 95, 54); /* Define a cor de fundo ao passar o mouse */
+    border-color: #0c5f0c; /* Define a cor da borda ao passar o mouse */
+    /* Outros estilos... */
+}
+
+.btn-primary a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 0.93rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+
+.card {
+    background-clip: padding-box; /* Define a área de clipping */
+    box-shadow: 0 0.063em 0.25em rgb(211, 197, 197); /* Define a sombra da caixa */
+}
+
+.row-bordered {
+    overflow: hidden; /* Esconde o overflow */
+}
+
+.account-settings-fileinput {
+    position: absolute; /* Define a posição absoluta */
+    visibility: hidden; /* Define a visibilidade como oculta */
+    width: 0.063em; /* Define a largura */
+    height: 0.063em; /* Define a altura */
+    opacity: 0; /* Define a opacidade */
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important; /* Define o peso da fonte com importância */
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important; /* Define o fundo transparente com importância */
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important; /* Define a largura com importância */
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Define o preenchimento */
+    border-color: rgba(24, 28, 33, 0.03) !important; /* Define a cor da borda com importância */
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important; /* Define a cor do texto com importância */
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Define o preenchimento */
+    border-color: rgba(24, 28, 33, 0.03) !important; /* Define a cor da borda com importância */
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important; /* Define a cor do texto com importância */
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Define o preenchimento */
+    border-color: rgba(255, 255, 255, 0.03) !important; /* Define a cor da borda com importância */
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important; /* Define a cor do texto com importância */
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #0c5f0c !important; /* Define a cor do texto com importância */
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Define o preenchimento */
+    border-color: rgba(24, 28, 33, 0.03) !important; /* Define a cor da borda com importância */
+}

@@ -1,0 +1,80 @@
+#menu {
+    display: flex; /* Usa display flex para o layout */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+}
+
+#buscados {
+    width: 100%; /* Define a largura total do elemento */
+    display: flex; /* Usa display flex para o layout */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 1.5em; /* Adiciona espaçamento entre os itens */
+    margin-top: 2em; /* Adiciona margem superior */
+}
+
+.buscas {
+    display: flex; /* Usa display flex para o layout */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    border-radius: 1.25em; /* Adiciona bordas arredondadas */
+    gap: 1.125em; /* Adiciona espaçamento entre os itens */
+    width: 25%; /* Define a largura do elemento */
+    padding: 1.25em; /* Adiciona padding ao redor do elemento */
+    background-color: #ffff; /* Define a cor de fundo */
+    box-shadow: 0em 0em 0.75em 0.25em rgba(34, 131, 7, 0.44); /* Adiciona sombra ao redor do elemento */
+    position: relative; /* Define a posição relativa para o elemento */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar os limites do elemento */
+}
+
+.buscas-tool {
+    position: absolute; /* Define a posição absoluta para o elemento */
+    background-color: #493900; /* Define a cor de fundo */
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    font-size: 1.563rem; /* Define o tamanho da fonte */
+    color: #c8d6bc; /* Define a cor do texto */
+    width: 4.375em; /* Define a largura do elemento */
+    height: 4.375em; /* Define a altura do elemento */
+    right: -0.625em; /* Define a posição à direita */
+    top: -0.625em; /* Define a posição no topo */
+    border-radius: 0em 2.344em 0em 2.656em; /* Adiciona bordas arredondadas */
+}
+
+.buscas-description {
+    color: #493900; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.buscas-rate i {
+    color: #ffd416dd; /* Define a cor dos ícones */
+}
+
+.buscas-price {
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    gap: 1.25em; /* Adiciona espaçamento entre os itens */
+}
+
+@media screen and (max-width: 73.125em) { /* Estilos para telas menores que 73.125em (1170px) */
+    #buscados {
+        flex-wrap: wrap; /* Permite que os itens se quebrem em várias linhas */
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .buscas {
+        width: calc(50% - 0.75em); /* Define a largura do elemento */
+    }
+}
+
+@media screen and (max-width: 40.625em) { /* Estilos para telas menores que 40.625em (650px) */
+    .buscas {
+        width: 100%; /* Define a largura do elemento */
+    }
+
+    #menu .section-subtitle {
+        text-align: center; /* Centraliza o texto */
+    }
+}

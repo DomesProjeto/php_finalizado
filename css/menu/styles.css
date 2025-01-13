@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('header.css'); /* Importa o arquivo de estilo para o cabeçalho */
+@import url('home.css'); /* Importa o arquivo de estilo para a página inicial */
+@import url('menu.css'); /* Importa o arquivo de estilo para o menu */
+@import url('testimonials.css'); /* Importa o arquivo de estilo para os depoimentos */
+@import url('footer.css'); /* Importa o arquivo de estilo para o rodapé */
+
+
+* {
+    font-family: 'Poppins', sans-serif; /* Define a família de fontes como Poppins */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    box-sizing: border-box; /* Define o box-sizing como border-box */
+}
+
+html {
+    scroll-behavior: smooth; /* Suaviza o comportamento de rolagem */
+}
+
+body {
+    background-color: #e4e2dd; /* Define a cor de fundo do corpo da página */
+}
+
+section {
+    padding: 1.75em 8%; /* Adiciona padding às seções */
+}
+
+.btn-default {
+    border: none; /* Remove a borda */
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    background-color: #68834d; /* Define a cor de fundo */
+    border-radius: 0.75em; /* Adiciona bordas arredondadas */
+    padding: 0.625em 0.875em; /* Adiciona padding ao botão */
+    font-weight: 600; /* Define o peso da fonte */
+    box-shadow: 0em 0em 0.625em 0.125em rgba(0, 0, 0, 0.1); /* Adiciona sombra ao botão */
+    cursor: pointer; /* Define o cursor como pointer */
+    transition: background-color .3s ease; /* Adiciona transição suave à mudança de cor de fundo */
+}
+
+.btn-default:hover {
+    background-color: #a3ae98; /* Define a cor de fundo ao passar o mouse */
+}
+
+.btn-default a {
+    text-decoration: none; /* Remove a sublinhado dos links */
+    font-size: 0.93rem; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: #fff; /* Define a cor do texto */
+}
+
+.social-media-buttons {
+    display: flex; /* Usa display flex para o layout */
+    gap: 1.125em; /* Adiciona espaçamento entre os botões */
+}
+
+.social-media-buttons a {
+    display: flex; /* Usa display flex para o layout */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 2.813em; /* Define a largura do botão */
+    height: 2.5em; /* Define a altura do botão */
+    background-color: #ffff; /* Define a cor de fundo */
+    font-size: 1.25rem; /* Define o tamanho da fonte */
+    border-radius: 0.625em; /* Adiciona bordas arredondadas */
+    text-decoration: none; /* Remove a sublinhado dos links */
+    color: #1d1d1d; /* Define a cor do texto */
+    box-shadow: 0em 0em 0.75em 0.25em rgba(0, 0, 0, 0.158); /* Adiciona sombra ao botão */
+    transition: box-shadow .3s ease; /* Adiciona transição suave à mudança de sombra */
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0em 0em 0.75em 0.5em rgba(0, 0, 0, 0.158); /* Define a sombra ao passar o mouse */
+}
+
+.section-title {
+    color: #bba11e; /* Define a cor do título da seção */
+    font-size: 1.563rem; /* Define o tamanho da fonte do título */
+}
+
+.section-subtitle {
+    font-size: 2.1875rem; /* Define o tamanho da fonte do subtítulo */
+}

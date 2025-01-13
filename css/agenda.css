@@ -1,0 +1,112 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo da Agenda */
+.agenda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dia {
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dia:hover {
+    transform: translateY(-10px);
+}
+
+.dia h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1em;
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+ul li .btn-remover {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px; /* Diminuí o tamanho do botão */
+    font-size: 0.9em; /* Texto menor */
+    cursor: pointer;
+    margin-left: 10px; /* Espaçamento do horário */
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li .btn-remover:hover {
+    background-color: #ff1a1a;
+}
+
+
+ul li.nenhum-horario {
+    text-align: center;
+    color: #888;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .agenda {
+        flex-direction: column;
+    }
+
+    .dia {
+        width: 100%;
+    }
+}
