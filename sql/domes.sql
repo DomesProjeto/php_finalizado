@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 10-Jan-2025 às 14:18
+-- Tempo de geração: 20-Jan-2025 às 15:14
 -- Versão do servidor: 8.0.36
 -- versão do PHP: 8.1.3
 
@@ -139,6 +139,30 @@ INSERT INTO `comentarios` (`id`, `trabalhador_id`, `comentario`, `data_comentari
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `especialidades`
+--
+
+CREATE TABLE `especialidades` (
+  `id` int NOT NULL,
+  `nome` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `especialidades`
+--
+
+INSERT INTO `especialidades` (`id`, `nome`) VALUES
+(1, 'Pedreiro'),
+(2, 'Eletricista'),
+(3, 'Diarista'),
+(4, 'Encanador'),
+(5, 'Jardineiro'),
+(6, 'Pintor'),
+(7, 'Faxineira');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `historico_contratacoes`
 --
 
@@ -244,7 +268,7 @@ INSERT INTO `trabalhos` (`id`, `usuario_id`, `descricao`, `data_trabalho`, `valo
 (1, 1, 'Reforma da cozinha', '2024-12-04 17:03:30', '500.00', 1),
 (2, 2, 'Pintura da sala', '2024-12-04 17:03:30', '200.00', 2),
 (3, 3, 'Troca de telhado', '2024-12-04 17:03:30', '1000.00', 3),
-(4, 1, 'Reforma de escritório', '2024-12-05 17:00:00', '800.00', 1),
+(4, 1, 'Hidráulica ', '2024-12-05 17:00:00', '800.00', 3),
 (5, 2, 'Instalação de ar-condicionado', '2024-12-05 17:00:00', '1200.00', 2),
 (6, 3, 'Montagem de móveis', '2024-12-05 17:00:00', '300.00', 3),
 (7, 4, 'Troca de piso', '2024-12-05 17:00:00', '1000.00', 4),
@@ -254,7 +278,7 @@ INSERT INTO `trabalhos` (`id`, `usuario_id`, `descricao`, `data_trabalho`, `valo
 (11, 8, 'Reforma de cozinha', '2024-12-05 17:00:00', '1100.00', 8),
 (12, 9, 'Troca de telhado', '2024-12-05 17:00:00', '2000.00', 9),
 (13, 10, 'Reforma de jardim', '2024-12-05 17:00:00', '700.00', 10),
-(14, 1, 'Reforma de escritório', '2024-12-05 17:00:00', '800.00', 1),
+(14, 1, 'Instalação elétrica', '2024-12-05 17:00:00', '800.00', 4),
 (15, 2, 'Instalação de ar-condicionado', '2024-12-05 17:00:00', '1200.00', 2),
 (16, 3, 'Montagem de móveis', '2024-12-05 17:00:00', '300.00', 3),
 (17, 4, 'Troca de piso', '2024-12-05 17:00:00', '1000.00', 4),
@@ -263,8 +287,7 @@ INSERT INTO `trabalhos` (`id`, `usuario_id`, `descricao`, `data_trabalho`, `valo
 (20, 7, 'Reforma de banheiro', '2024-12-05 17:00:00', '600.00', 7),
 (21, 8, 'Reforma de cozinha', '2024-12-05 17:00:00', '1100.00', 8),
 (22, 9, 'Troca de telhado', '2024-12-05 17:00:00', '2000.00', 9),
-(23, 10, 'Reforma de jardim', '2024-12-05 17:00:00', '700.00', 10),
-(24, 1, 'Reforma de escritório', '2024-12-05 17:00:00', '800.00', 1);
+(23, 10, 'Reforma de jardim', '2024-12-05 17:00:00', '700.00', 10);
 
 -- --------------------------------------------------------
 
@@ -296,7 +319,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `primeiro_nome`, `sobrenome`, `email`, `celular`, `senha`, `genero`, `cep`, `estado`, `municipio`, `bairro`, `numero`, `complemento`, `foto_perfil`, `biografia`, `aniversario`) VALUES
-(1, 'Marta', 'Mendes', 'martamendes@gmail.com', '12345678', '$2y$10$r8QKKdcbny3Zv3LnPZoahuvdXpVbovuoGJNdaFu1YVHulQfvd2BIm', 'Feminino', '29300000', 'Espírito Santo', 'Cariacica', 'Bela Aurora', '400', '4', NULL, 'Olá, mundo!', NULL),
+(1, 'Marta', 'Mendes', 'martamendes@gmail.com', '12345678', '$2y$10$r8QKKdcbny3Zv3LnPZoahuvdXpVbovuoGJNdaFu1YVHulQfvd2BIm', 'Feminino', '29300000', 'Espírito Santo', 'Cariacica', 'Bela Aurora', '400', '4', NULL, '\nMarta Mendes, nascida em 10 de agosto de 1990, é pedreira e pintora. Desde jovem, aprendeu o ofício da construção civil com seu pai, se destacando como uma das poucas mulheres na profissão. Paralelamente, desenvolveu sua paixão pela pintura, criando obras que mesclam sua vivência no campo da construção com a expressão artística. Seu trabalho é uma fusão de força e sensibilidade, e ela é reconhecida tanto no canteiro de obras quanto nas galerias. Marta acredita que cada construção e cada quadro refletem sua visão única do mundo.', NULL),
 (2, 'Carlos', 'Almeida', 'carlos.almeida@example.com', '4444444444', '$2y$10$U6ShijzM.wGETELpz4zl2upTdh.Dp6sny7vVuLizLKg/BtCWnugYi', 'Masculino', '29400000', 'Espírito Santo', 'Guarapari', 'Ipiranga', '500', 'Bloco B', NULL, NULL, NULL),
 (3, 'Paula', 'Santos', 'paula.santos@example.com', '5555555555', '$2y$10$jd711p2qUDacMszopDnQbOCvSxpjTNS5Lt3YWPAhbvE2sI3.JwByu', 'Feminino', '29500000', 'Espírito Santo', 'Anchieta', 'Centro', '600', 'Apto 203', NULL, NULL, NULL),
 (4, 'Marcos', 'Silva', 'marcos.silva@example.com', '6666666666', '$2y$10$MYKkDuVufY1nt0AIi5btV.ijtlODDpb1h1gIl2i5FbMd/FiW9Dhi.', 'Masculino', '29600000', 'Espírito Santo', 'Linhares', 'Três Barras', '700', NULL, NULL, NULL, NULL),
@@ -305,7 +328,49 @@ INSERT INTO `usuarios` (`id`, `primeiro_nome`, `sobrenome`, `email`, `celular`, 
 (7, 'Fernanda', 'Rodrigues', 'fernanda.rodrigues@example.com', '9999999999', '$2y$10$M6W1CPfuuCghb8p1vgT/eeRxYRg/CwYaI8q87Qqt0QURfnySxB0XK', 'Feminino', '29900000', 'Espírito Santo', 'São Mateus', 'Guriri', '1000', 'Apto 405', NULL, NULL, NULL),
 (8, 'Lucas', 'Oliveira', 'lucas.oliveira@example.com', '1010101010', '$2y$10$6GeHMY1JpK80OI4UYoSXoOh9kMopTCaIS.y2ZoJCYJ1G.PQrMB0ia', 'Masculino', '30000000', 'Espírito Santo', 'Viana', 'Marcílio de Noronha', '1100', NULL, NULL, NULL, NULL),
 (9, 'Raquel', 'Moreira', 'raquel.moreira@example.com', '1111111111', '$2y$10$QDvsqhcucM1oDhaUL1ohqOFKSuZ8nDGHkB.OoD2PzQID9MO0eEw42', 'Feminino', '30100000', 'Espírito Santo', 'Afonso Cláudio', 'Centro', '1200', 'Casa', NULL, NULL, NULL),
-(10, 'Pedro', 'Gomes', 'pedro.gomes@example.com', '1212121212', '$2y$10$qc7bkpfJCEJw20FktC8QNuX1qRe5V5AxJt.31Y2FdNwAbGFiXzEaO', 'Masculino', '30200000', 'Espírito Santo', 'Santa Teresa', 'Centro', '1300', 'Apto 305', NULL, NULL, NULL);
+(10, 'Pedro', 'Gomes', 'pedro.gomes@example.com', '1212121212', '$2y$10$qc7bkpfJCEJw20FktC8QNuX1qRe5V5AxJt.31Y2FdNwAbGFiXzEaO', 'Masculino', '30200000', 'Espírito Santo', 'Santa Teresa', 'Centro', '1300', 'Apto 305', NULL, NULL, NULL),
+(35, 'eliane', 'souza', 'eli@gmail.com', '274444444444', '$2y$10$koSHXPyMtC4gqF5O0Vp4bOSfZsSubXFqpomaj0aTDENTnbPZ10zqm', 'Feminino', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(36, 'Elis', 'Regina', 'regis@gmail.com', '2455555555', '$2y$10$3NB2KOjFbqY7PVXQcKQbjucL/m.BKURyTj.A/C6uUHZz3RbN2ju7i', 'Masculino', '29165540', 'ES', 'Serra', 'Parque Residencial Laranjeiras', '45', '12', NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuario_especialidades`
+--
+
+CREATE TABLE `usuario_especialidades` (
+  `usuario_id` int NOT NULL,
+  `especialidade_id` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `usuario_especialidades`
+--
+
+INSERT INTO `usuario_especialidades` (`usuario_id`, `especialidade_id`) VALUES
+(1, 1),
+(4, 1),
+(6, 1),
+(9, 1),
+(36, 1),
+(2, 2),
+(6, 2),
+(10, 2),
+(36, 2),
+(3, 3),
+(7, 3),
+(10, 3),
+(2, 4),
+(4, 4),
+(8, 4),
+(5, 5),
+(8, 5),
+(1, 6),
+(5, 6),
+(9, 6),
+(36, 6),
+(3, 7),
+(7, 7);
 
 -- --------------------------------------------------------
 
@@ -368,6 +433,12 @@ ALTER TABLE `comentarios`
   ADD KEY `trabalhador_id` (`trabalhador_id`);
 
 --
+-- Índices para tabela `especialidades`
+--
+ALTER TABLE `especialidades`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `historico_contratacoes`
 --
 ALTER TABLE `historico_contratacoes`
@@ -394,6 +465,13 @@ ALTER TABLE `trabalhos`
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Índices para tabela `usuario_especialidades`
+--
+ALTER TABLE `usuario_especialidades`
+  ADD PRIMARY KEY (`usuario_id`,`especialidade_id`),
+  ADD KEY `especialidade_id` (`especialidade_id`);
 
 --
 -- Índices para tabela `visitacoes`
@@ -425,6 +503,12 @@ ALTER TABLE `comentarios`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
+-- AUTO_INCREMENT de tabela `especialidades`
+--
+ALTER TABLE `especialidades`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT de tabela `historico_contratacoes`
 --
 ALTER TABLE `historico_contratacoes`
@@ -446,7 +530,7 @@ ALTER TABLE `trabalhos`
 -- AUTO_INCREMENT de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de tabela `visitacoes`
@@ -488,6 +572,13 @@ ALTER TABLE `pagamentos`
 --
 ALTER TABLE `trabalhos`
   ADD CONSTRAINT `trabalhos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`);
+
+--
+-- Limitadores para a tabela `usuario_especialidades`
+--
+ALTER TABLE `usuario_especialidades`
+  ADD CONSTRAINT `usuario_especialidades_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`),
+  ADD CONSTRAINT `usuario_especialidades_ibfk_2` FOREIGN KEY (`especialidade_id`) REFERENCES `especialidades` (`id`);
 
 --
 -- Limitadores para a tabela `visitacoes`
