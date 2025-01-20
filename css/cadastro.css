@@ -158,13 +158,19 @@ body {
 .continue-button span {
     color:#fff;
 }
+
+/* Alteração para reposicionar as especialidades */
 .especialidades-group {
     display: flex;
-    flex-direction: column; /* Exibe as checkboxes em uma coluna */
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 1rem; /* Adiciona espaço entre as checkboxes */
+    margin-top: 1rem; /* Espaço entre o título e as opções */
 }
 
 .especialidade-input {
-    margin-bottom: 1rem; /* Adiciona espaço entre as checkboxes */
+    display: flex;
+    align-items: center;
 }
 
 .especialidade-input input {
@@ -172,11 +178,9 @@ body {
 }
 
 .especialidade-input label {
-    display: inline-block; /* Garante que o label fique ao lado da checkbox */
     font-size: 0.85rem; /* Ajuste do tamanho da fonte */
     color: #000000c0; /* Cor do texto */
 }
-
 
 /* ====================== Media Queries ========================== */
 
@@ -229,6 +233,7 @@ body {
         flex-direction: column; /* Coloca os itens de gênero em coluna */
     }
 }
+
 /* Para telas menores que 480px */
 @media screen and (max-width: 480px) {
     .form-header h1 {
